@@ -1,28 +1,42 @@
-// Add your javascript here
 'use strict';
 //since you can't import jQuery
-//create global variables for each button
-const b1 = document.getElementById("b1");
-const b2 = document.getElementById("b2");
-const b3 = document.getElementById("b3");
-const b4 = document.getElementById("b4");
 
-const buttonList = [b1, b2, b3, b4];
+function indexMessage(){
+    let message = document.getElementById('message').innerHTML;
+    //let message = messageElement.string.Empty;
 
-function indexMessage(buttonList){
-    let message = "";
-    if (document.onclick(function(){
+    switch(message) {
+    case document.getElementById('b1').onclick :
         message = "Button 1";
-        alert("Button 1");
+        alert("Hey I'm button 1");
         console.log("Button 1");
-    }));
-    return message;
-    // `<section class="feedback" role="feedback">
-    //   <div id="message"> {message} </div>      
-    // </section>`;
+        break;
+    case document.getElementById('b2'):
+        console.log("Button 2");
+        break;
+    case document.getElementById('b3'):
+        console.log("Button 3");
+        break;
+    case document.getElementById('b4'):
+        console.log("Button 4");
+        break;
+    case document.getElementById('b5'):
+        console.log("Button 5");
+        break;
+    case document.getElementById('b6'):
+        console.log("Button 6");
+        break;
+    case document.getElementById('b7'):
+        console.log("Button 7");
+        break;
+    default:
+        message = "An error has occured."
+        console.log("An error has occured.");
 }
-document.getElementById('b1').onclick = function showMessageContent() {
-
-   console.log("Button 1")
-
 }
+
+// document.getElementById('b1').onclick = function showMessageContent() {
+//    console.log("Button 1")
+// }
+
+indexMessage();
