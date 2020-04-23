@@ -1,0 +1,12 @@
+/* Add your css styles here */
+li {
+    list-style-type: none;
+    display: inline-block;
+    margin: 0 10px;
+    padding: 5px;
+}
+
+#buttonContainer {
+    padding: 5px;
+    margin: 5px;
+}
