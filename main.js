@@ -1,42 +1,27 @@
+// Add your javascript here
 'use strict';
-//since you can't import jQuery
 
-function indexMessage(){
-    let message = document.getElementById('message').innerHTML;
-    //let message = messageElement.string.Empty;
+//handle HTML message
+const insertMessage = document.getElementById('message').innerText = "Button index: ";
 
-    switch(message) {
-    case document.getElementById('b1').onclick :
-        message = "Button 1";
-        alert("Hey I'm button 1");
-        console.log("Button 1");
-        break;
-    case document.getElementById('b2'):
-        console.log("Button 2");
-        break;
-    case document.getElementById('b3'):
-        console.log("Button 3");
-        break;
-    case document.getElementById('b4'):
-        console.log("Button 4");
-        break;
-    case document.getElementById('b5'):
-        console.log("Button 5");
-        break;
-    case document.getElementById('b6'):
-        console.log("Button 6");
-        break;
-    case document.getElementById('b7'):
-        console.log("Button 7");
-        break;
-    default:
-        message = "An error has occured."
-        console.log("An error has occured.");
-}
-}
+ function grabButton(){
+     if (document.getElementById('b1')) {
+         alert(insertMessage + "b1");
+     }
+     else if(document.getElementById('b2')) {
+         alert(insertMessage + "b2");
+     }
+     else if(document.getElementById('b3').onclick){
+         alert(insertMessage + "b3");
+     }
+     else
+     console.log("There was an error");
+ }
 
 // document.getElementById('b1').onclick = function showMessageContent() {
 //    console.log("Button 1")
 // }
 
-indexMessage();
+function handleOnClick(){
+    grabButton();
+}
